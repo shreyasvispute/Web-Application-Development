@@ -1,0 +1,29 @@
+<article class="new-post">
+  <p class="lead">
+    This website allows you to search superheroes and supervillains in the
+    Marvel universe. Search your favorite heroes or villains by typing name in
+    the search box below.
+  </p>
+  <hr class="my-4" />
+  <form action="/search" method="POST" class="new-post-form">
+    <div class="container">
+      <div>
+        <label id="lblsearch" for="search">
+          Search
+          <input
+            type="text"
+            id="search"
+            name="searchTerm"
+            placeholder="Search characters here..."
+            value="{{post.title}}"
+            class="searchbox"
+          />
+        </label>
+      </div>
+      <div><input type="submit" class="btn btn-primary searchbtn" />
+      </div>
+    </div>
+
+  </form>
+
+</article>

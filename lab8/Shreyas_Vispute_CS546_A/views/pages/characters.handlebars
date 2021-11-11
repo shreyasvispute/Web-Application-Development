@@ -1,0 +1,19 @@
+<div>
+  <div class="description">
+    <img class="charimg" alt="{{title}}" src="{{image}}" />
+    <p class="info">
+      {{description}}
+    </p>
+  </div>
+
+  <h2 class="comics">Comics</h2>
+  <ul class="comiclist">
+    {{#each names}}
+      {{#each comics.items}}
+        <li>
+          {{name}}
+        </li>
+      {{/each}}
+    {{/each}}
+  </ul>
+</div>

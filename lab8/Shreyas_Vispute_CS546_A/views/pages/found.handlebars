@@ -1,0 +1,15 @@
+<article class="new-post">
+  <h2>{{searchTerm}}</h2>
+  {{#if names}}
+    <ul>
+      {{#each names}}
+        <li>
+          <a href="/characters/{{id}}">{{name}}</a>
+        </li>
+      {{/each}}
+    </ul>
+
+  {{/if}}
+
+  <a href="/">Make another search</a>
+</article>

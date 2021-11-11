@@ -1,0 +1,64 @@
+/* Main page */
+* {
+  box-sizing: border-box;
+}
+.navbar-brand {
+  color: firebrick !important;
+}
+.header1 {
+  font-size: 2rem;
+  color: firebrick;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+.navbar {
+  background-color: white !important;
+  align-items: unset;
+}
+
+/* Search page */
+.searchbox {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  margin-left: 10px;
+  border-color: firebrick;
+}
+
+.searchbtn {
+  margin-top: 10px;
+  margin-left: 60px;
+  background-color: firebrick !important;
+}
+
+.error,
+.not-found {
+  color: red;
+}
+
+/* characters */
+.description {
+  display: inline-flex;
+}
+.info {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.charimg {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.comics {
+  color: firebrick;
+}
+
+.comiclist li {
+  color: brown;
+}
