@@ -37,3 +37,6 @@
 .btn-primary {
   margin-top: 15px;
 }
+#error p {
+  color: firebrick;
+}
