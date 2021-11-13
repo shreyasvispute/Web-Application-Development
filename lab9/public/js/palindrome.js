@@ -13,6 +13,10 @@
           return;
         }
         let str = removeAlphanumerics(phrase.toLowerCase());
+        if (str === "") {
+          document.getElementById("error").classList.remove("error-hidden");
+          return;
+        }
         let result = isPalindrome(str);
         let orderedList = document.getElementById("attempts");
         if (result) {
