@@ -289,7 +289,7 @@ function validateWebsite(website) {
   }
 }
 //check parameters validator
-const checkParameters = () => {
+const checkParameters = () =>     {
   throw "Expected arguments not found";
 };
 

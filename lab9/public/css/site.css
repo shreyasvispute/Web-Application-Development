@@ -8,9 +8,6 @@
 .error-hidden {
   display: none;
 }
-.error-show {
-  display: block;
-}
 
 .footer {
   position: absolute;
@@ -27,6 +24,7 @@
 }
 #attempts {
   list-style-position: inside;
+  padding-right: 40px;
 }
 #palindrome {
   width: 50%;
