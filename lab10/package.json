@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/shreyasvispute/WebProgramming/issues"
   },
-  "homepage": "https://github.com/shreyasvispute/WebProgramming#readme"
+  "homepage": "https://github.com/shreyasvispute/WebProgramming#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.4"
+  }
 }
