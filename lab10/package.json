@@ -7,19 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shreyasvispute/WebProgramming.git"
-  },
   "author": "Shreyas Vispute 104477563",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shreyasvispute/WebProgramming/issues"
-  },
-  "homepage": "https://github.com/shreyasvispute/WebProgramming#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
     "express-session": "^1.17.2",
     "mongodb": "^4.1.4"
   }

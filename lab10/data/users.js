@@ -20,7 +20,9 @@ async function createUser(username, password = checkParameters()) {
     password: hashedPassword,
   };
 
-  const usersCollection = await users();
+  const usersCollection = await users().catch(function (e) {
+    throw "InternalServerError";
+  });
 
   const uniqueIndex = await usersCollection.createIndex(
     { username: 1 },
@@ -73,7 +75,9 @@ function validate(username, password) {
   if (username.length === 0 || username.length < 4)
     throw "Error: Username cannot be empty or length should be atleast 4 chars long";
   else if (/\s/.test(username)) throw "Error: Username cannot contain spaces";
-  //username alphanumeric check
+  if (checkAlphanumerics(username)) {
+    throw "Error: Username only accepts alphanumerics";
+  }
 
   if (password.trim().length === 0 || password.length < 6)
     throw "Error: Password cannot be blanks or length should be atleast 6 chars long";
@@ -84,6 +88,14 @@ function validate(username, password) {
 const checkParameters = () => {
   throw "Expected arguments not found";
 };
+
+function checkAlphanumerics(phrase) {
+  let str = phrase;
+  const checker = /[^a-z0-9]/g;
+  if (checker.test(str)) {
+    return true;
+  }
+}
 
 module.exports = {
   createUser,
