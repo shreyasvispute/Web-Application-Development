@@ -1,0 +1,54 @@
+{{! <!DOCTYPE html> }}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{title}}</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../public/css/site.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header class="container">
+      <h1 class="header">My TV</h1>
+    </header>
+
+    <main class="container container-main" id="main">
+      <div class="row">
+        {{{body}}}
+      </div>
+      <div class="row">
+        <ul id="showList" class="listattempts lead">
+        </ul>
+      </div>
+
+      <div id="show">
+        <p>Search string cannot be empty spaces or blanks or special characters</p>
+      </div>
+
+    </main>
+
+    <footer class="container footer">
+      <h4>Shreyas Vispute, 104477563</h4>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../public/js/tvapi.js"></script>
+
+  </body>
+</html>
