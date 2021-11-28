@@ -5,10 +5,10 @@
   display: none;
 }
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 30px;
   text-align: center;
 }
 
@@ -22,4 +22,7 @@
 }
 #error p {
   color: firebrick;
+}
+#search_term {
+  width: 200px;
 }

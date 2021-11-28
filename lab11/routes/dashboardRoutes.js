@@ -4,7 +4,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   try {
     res.render("pages/dashboard", {
-      title: "My TV",
+      title: "Directory",
     });
   } catch (error) {
     res.status(404).json({ message: "Page not found" });
