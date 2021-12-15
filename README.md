@@ -1,1 +1,1 @@
-Web applications and learning
+Web applications development
