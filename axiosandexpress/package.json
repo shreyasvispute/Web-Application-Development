@@ -1,0 +1,15 @@
+{
+  "name": "axiosandexpress",
+  "version": "1.0.0",
+  "description": "async/await",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Shreyas Vispute",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}
